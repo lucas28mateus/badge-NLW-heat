@@ -1,0 +1,77 @@
+@import 'global.scss';
+
+body {
+  display: grid;
+  place-items: center;
+
+  main {
+    background: url(../assets/background.svg) no-repeat;
+    width: 375px;
+    height: 812px;
+
+    .container {
+      max-width: 250px;
+      margin: 0 auto;
+      text-align: center;
+      color: var(--gray);
+
+      .avatar {
+        width: 20rem;
+        margin: 17rem auto 0;
+        position: relative;
+
+        span {
+          position: absolute;
+          top: -15px;
+          z-index: 1;
+        }
+      }
+      .avatar > img {
+        height: 20.9rem;
+        width: 18.9rem;
+        object-fit: cover;
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-top: 2rem;
+      }
+
+      a {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        text-align: center;
+        color: var(--gray);
+        font-size: 1.4rem;
+      }
+
+      p {
+        margin-top: 2.5rem;
+        font-size: 1.5rem;
+      }
+
+      ul {
+        margin-top: 4.5rem;
+
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      .DoWhile {
+        background: linear-gradient(104.3deg, #ff008e 0.48%, #ffcd1e 100%);
+
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+
+        margin-top: 5rem;
+        font-size: 3rem;
+      }
+    }
+  }
+}
